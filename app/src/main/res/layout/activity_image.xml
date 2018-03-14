@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@android:color/background_light"
+    tools:context="com.blacio.retelepetri.ImageActivity">
+
+    <ImageView
+        android:id="@+id/imagine_RP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/rp1" />
+
+    <Button
+        android:id="@+id/incepe_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_button"
+        android:layout_weight="9"
+        android:background="@drawable/buttonshape"
+        android:text="Incepe QUIZ-ul"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:onClick="incepe_quiz_button"
+        android:textSize="@dimen/size_varianta"/>
+
+</LinearLayout>

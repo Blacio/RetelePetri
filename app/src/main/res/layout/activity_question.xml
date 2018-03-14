@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.blacio.retelepetri.QuestionActivity">
+
+    <TextView
+        android:id="@+id/intrebare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textSize="@dimen/size_question"
+        android:textColor="#a7a7a7"
+        android:text="Aici va sta prima intrebare !!!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RadioGroup
+            android:id="@+id/radioGr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_button"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intrebare 1"
+                android:textColor="#000000"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/size_varianta"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/size_varianta"
+                android:textColor="#000000"
+                android:text="Intrebare 2"
+                android:gravity="left|center_vertical"/>
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/size_varianta"
+                android:textColor="#000000"
+                android:text="Intrebare 3"
+                android:gravity="left|center_vertical" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/size_varianta"
+                android:textColor="#000000"
+                android:text="Intrebare 4"
+                android:gravity="left|center_vertical"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buton_resultat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_button"
+            android:layout_weight="3"
+            android:background="@drawable/buttonshape"
+            android:text="Raspuns final"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="@dimen/size_varianta"/>
+
+    </LinearLayout>
+
+</LinearLayout>

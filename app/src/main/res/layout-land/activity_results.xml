@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_button"
+    android:weightSum="2"
+    android:background="@android:color/background_light"
+    tools:context="com.blacio.retelepetri.ResultsActivity">
+
+
+    <TextView
+        android:id="@+id/rezultat_medie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Felicitari,\nmedia ta in acest moment este:\n10.000 !!!"
+        android:textColor="#a7a7a7"
+        android:padding="@dimen/padding_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/result1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+    <TextView
+        android:id="@+id/rezultate_individuale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Medie 1: 10\nMedie 2:10\nMedie 3:10"
+        android:textColor="#a7a7a7"
+        android:padding="@dimen/padding_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/result2"/>
+
+
+    <TextView
+        android:id="@+id/nr_exercitii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nr execitii: 3\nNr incercari: 100"
+        android:textColor="#a7a7a7"
+        android:padding="@dimen/padding_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/result3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

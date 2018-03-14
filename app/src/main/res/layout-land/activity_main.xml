@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="2"
+    tools:context="com.blacio.retelepetri.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#a7a7a7"
+        android:layout_gravity="center"
+        android:textSize="@dimen/title_menu"
+        android:text="RETELE PETRI" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textColor="#a7a7a7"
+        android:textSize="@dimen/text_but_menu"
+        android:text="Arborele de acoperire si proprietatile aferente" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_weight="1">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_button"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_but_menu"
+        android:background="@drawable/buttonshape"
+        android:text="Invata teoria"
+        android:onClick="teorie"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_button"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_but_menu"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/buttonshape"
+        android:text="Testeaza-ti cunostintele"
+        android:onClick="quiz"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_button"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_but_menu"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/buttonshape"
+        android:text="Afla media"
+        android:onClick="medie"/>
+
+        </LinearLayout>
+</LinearLayout>

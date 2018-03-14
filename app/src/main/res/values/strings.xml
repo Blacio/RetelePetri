@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Retele Petri</string>
+
+    <string name="i1">Reteaua Petri prezentata este MARGINITA ?</string>
+    <string name="i2">Ce puteti spune despre VIABILITATEA retelei ?</string>
+    <string name="i3">Exista BLOCAJE in cadrul retelei ?</string>
+    <string name="i4">Este reteaua petri REINITILIZABILA ?</string>
+    <string name="i5">Ce CONFLICTE STRUCTURALE intalnim ?</string>
+    <string name="i6">Care dintre aceste CONFLICTE devin EFECTIVE</string>
+
+
+    <string name="rc1">Da, reteaua este marginita</string>
+    <string name="rg11">Nu, reteaua nu este marginita</string>
+    <string name="rg12">Depinde de graful de marcaje</string>
+    <string name="rg13">Da, caci numarul de jetoane este mai mic sau egal decat numarul de tranzitii</string>
+
+    <string name="rc2">q-viabila</string>
+    <string name="rg21">Viabila</string>
+    <string name="rg22">Neviabila</string>
+    <string name="rg23">In situatia de fata este incert</string>
+
+    <string name="rc3">Nu, nu exista blocaje</string>
+    <string name="rg31">Da, exista blocaje</string>
+    <string name="rg32">Da, exista blocaje caci nu se pot efectua toate tranzitiile din fiecare marcaj</string>
+    <string name="rg33">Nu, nu exista blocaje, caci din toate starile se poate reajunge in starea initiala</string>
+
+    <string name="rc4">Da</string>
+    <string name="rg41">Nu</string>
+    <string name="rg42">Incert </string>
+    <string name="rg43">Nu se stie, depinde de graful de marcaje</string>
+
+    <string name="rc5">Nu sunt</string>
+    <string name="rg51">P3,{T3,T4}</string>
+    <string name="rg52">T2,{P4,P5}</string>
+    <string name="rg53">P3,{T3,T4} si P3,{T1,T2}</string>
+
+    <string name="rc6">Nu exista conflicte deloc</string>
+    <string name="rg61">Conflictele structurale nu devin efective</string>
+    <string name="rg62">Toate conflictele structurale devin efective</string>
+    <string name="rg63">Doar P3,{T3,T4} devinde efectiv</string>
+
+
+
+    <string name="drc1">Reteaua este marginita</string>
+    <string name="drg11">Da, caci sunt mai multe tranzitii decat stari</string>
+    <string name="drg12">Depinde de graful de marcaje</string>
+    <string name="drg13">Reteaua este nemarginita</string>
+
+    <string name="drc2">q-viabila</string>
+    <string name="drg21">Neviabila</string>
+    <string name="drg22">Viabila, caci apar toate tranzitiile</string>
+    <string name="drg23">Viabila, caci apar toate starile</string>
+
+    <string name="drc3">Nu exista blocaje</string>
+    <string name="drg31">Exista blocaje caci nu din toate tranzitiile se poate ajunge in toate starile</string>
+    <string name="drg32">Exista blocaje caci nu din toate starile se poate ajunge in toate tranzitiile</string>
+    <string name="drg33">Nu putem afla doar din arborele de acoperire</string>
+
+    <string name="drc4">Da, caci din orice stare putem ajunge in marcajul initial </string>
+    <string name="drg41">Da, caci reteaua nu prezinta blocaje </string>
+    <string name="drg42">Nu, caci nu in orice stare se poate ajunge folosind doar T1</string>
+    <string name="drg43">Nu, caci reteaua prezinta blocaje</string>
+
+    <string name="drc5">P2{T1,T2,T5} si P1{T3,T5}</string>
+    <string name="drg51">P2{T1,T2} si P1{T3,T5}</string>
+    <string name="drg52">P2{T1,T2,T5}</string>
+    <string name="drg53">P1{T3,T5}</string>
+
+    <string name="drc6">Exista un marcaj pentru care ambele conflicte devin efective</string>
+    <string name="drg61">P2{T1,T2,T5} devine efectiv in 3 marcaje</string>
+    <string name="drg62">Ambele conflicte devin efective in cate 2 marcaje</string>
+    <string name="drg63">P1{T3,T5} nu devinde efectiv</string>
+
+
+
+    <string name="xrc1">Nu este marginit</string>
+    <string name="xrg11">Este marginit caci nu exista w(omega)</string>
+    <string name="xrg12">Este marginit caci w(omega) apare in numar limitat</string>
+    <string name="xrg13">Este marginit</string>
+
+    <string name="xrc2">Viabila</string>
+    <string name="xrg21">q-viabila</string>
+    <string name="xrg22">Neviabila</string>
+    <string name="xrg23">Nu se poate specifica doar cu ajutorul arborelui de acoperire</string>
+
+    <string name="xrc3">Nu exista blocaje</string>
+    <string name="xrg31">Exista blocaje in M3 si M5</string>
+    <string name="xrg32">Nu exista blocaje decat in M1</string>
+    <string name="xrg33">Exista blocaje</string>
+
+    <string name="xrc4">Nu, caci reteaua nu este marginita</string>
+    <string name="xrg41">Nu, caci nu se poate ajunge din M3 in M0</string>
+    <string name="xrg42">Da, caci reteaua este marginita</string>
+    <string name="xrg43">Da, caci mereu ne putem intoarce in marcajul initial</string>
+
+    <string name="xrc5">P1,{T1,T3} si P2,{T2,T3}</string>
+    <string name="xrg51">P1,{T1,T2} si P2,{T1,T2}</string>
+    <string name="xrg52">P1,{T2,T3} si P2,{T1,T3}</string>
+    <string name="xrg53">P2,{T1,T3} si P1,{T2,T3}</string>
+
+    <string name="xrc6">Ambele devin efective in acelasi marcaj</string>
+    <string name="xrg61">Ambele devin efective intr-un singur marcaj, dar diferit</string>
+    <string name="xrg62">Ambele devin efective in trei marcaje</string>
+    <string name="xrg63">Niciunul nu devine efectiv</string>
+
+    <string name="title_activity_image2">Image2Activity</string>
+
+
+    <string name="explicatie1">Reteaua Petri este marginita daca numarul de jetoane din fiecare marcaj este finit.</string>
+    <string name="explicatie2">Reteaua Petri este viabila daca putem executa toate tranzitiile plecand din orice marcaj. Daca in arborele de acoperire se regasesc toate tranzitiile din retea, atunci reteaua este cel putin cvasiviabila.</string>
+    <string name="explicatie3">Un blocaj este un marcaj pentru care nicio tranzitie nu mai este valida.</string>
+    <string name="explicatie4">Reteaua este reinitializabila daca din fiecare marcaj exista drum catre marcajul initial.</string>
+    <string name="explicatie5">Retea Petri prezinta un conflict structural daca o pozitie este intrare pentru cel putin doua tranzitii.</string>
+    <string name="explicatie6">Un conflict efectiv este reprezentat de un conflict structural care intr-un marcaj are valide cel putin doua tranzitii ale conflictului dar pentru care numarul de jetoane din pozitia de conflict este insuficient pentru a executa toate tranzitiile VALIDE ale conflictului.</string>
+
+</resources>
